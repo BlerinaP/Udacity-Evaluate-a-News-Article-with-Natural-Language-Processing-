@@ -17,7 +17,9 @@ You need `node` and `npm` installed on your system to be able to run and build t
 - ```npm install```
 - ```npm start``` to start the app
 - this app runs on localhost:8000, but you can of course edit that in index.js
-
+- You need to create .env file anf put the API-id and API-key you take from Aylien.
+- API_ID=**************************
+- API_KEY=**************************
 ##Development environment
 * To run this application in development enviroment you need to run 
 ```bash
