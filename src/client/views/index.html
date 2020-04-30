@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Natural Language Processing</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="">
+            </div>
+            <h1>Natural Language Processing</h1>
+            <div class="">
+            </div>
+        </header>
+
+        <main>
+            <h1>Is text positive, negative or neutral. Find out</h1>
+            <section>
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <h2>Put some test below, and see what the Alyien NLP understands.</h2>
+                    <input id="text" type="text" name="input" value=""  placeholder="Put some text here">
+                    <input type="submit" name="" value="submit">
+                </form>
+            <section>
+
+            <section>
+                <ul>
+                    <li>
+                        <h3>Text Polarity:</h3>
+                        <p id="text_polarity"><b></b></p>
+                        <h3>Text Subjectivity:</h3>
+                        <p id="text_subjectivity"><b></b></p>
+                        <h3>Polarity Confidence:</h3>
+                        <p id="text_polarity_confidence"><b></b></p>
+                        <h3>Subjectivity Confidence:</h3>
+                        <p id="text_subjectivity_confidence"><b></b></p>
+                    </li>
+                </ul>
+
+            </section>
+                    <h1>Is your blog or article positive, negative or neutral. Find out</h1>
+                <!--HTML-FOR-URL-->
+
+                <section>
+                    <form class="" onsubmit="return Client.handleSubmitArticle(event)">
+                        <h2>Put some url below, and see what the Alyien NLP understands.</h2>
+                        <input id="text-url" type="url" name="input" value=""  placeholder="https://...">
+                        <input type="submit" name="" value="submit">
+                    </form>
+                    <section>
+
+                        <section>
+                            <ul>
+                                <li>
+                                    <h3>Text Polarity:</h3>
+                                    <p id="polarity"><b></b></p>
+                                    <h3>Text Subjectivity:</h3>
+                                    <p id="subjectivity"><b></b></p>
+                                    <h3>Polarity Confidence:</h3>
+                                    <p id="polarity_confidence"><b></b></p>
+                                    <h3>Subjectivity Confidence:</h3>
+                                    <p id="subjectivity_confidence"><b></b></p>
+                                    <h3>Text Excerpt:</h3>
+                                    <h4 id="excerpt"></h4>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <!---HTML FOR HASHTAG-->
+
+                        <h1>Put some text below and see the hashtags you can use.</h1>
+                <section>
+                     <form class="" onsubmit="return Client.hashtagSubmit(event)">
+                     <h2>Put some text below, and see what the Alyien NLP understands.</h2>
+                         <h2 class="advice">Keep in mind, the text cannot to be to short.</h2>
+                      <input id="hashtag" type="text" name="input" value=""  placeholder="Put some text here">
+                       <input type="submit" name="" value="submit">
+                       </form>
+                 <section>
+                        <section>
+                           <ul>
+                               <li>
+                                     <h3>Language:</h3>
+                                     <p id="lng-hashtag"><b></b></p>
+                                     <h3>Text:</h3>
+                                     <p id="text-hashtag"><b></b></p>
+                                     <h3>Hashtags:</h3>
+                                     <p id="hashtags"><b></b></p>
+                                </li>
+                            </ul>
+                         </section>
+        </main>
+
+        <footer>
+
+        </footer>
+       <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    </body>
+</html>

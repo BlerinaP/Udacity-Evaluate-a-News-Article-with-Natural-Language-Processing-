@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 2;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+}
+.bered{
+    border: 1px solid red;
+}
+h3{
+    color: #008a8a;
+    font-size: 20px;
+    line-height: 50px;
+}
+p{
+    color: #000000;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: Arial;
+}
+
+p#text-hashtag{
+    line-height: 25px;
+    color: black;
+}
+
+h4{
+    line-height: 20px;
+}
+h2.advice{
+    padding-top: 5px;
+    color: #d60000;
+}
